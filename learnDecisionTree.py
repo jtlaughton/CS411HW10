@@ -247,6 +247,7 @@ with open(filename, 'r') as csvfile:
     for row in csvreader:
         rows.append(list(map(str.strip, row)))
 
+# makes it general to most csv formats
 header = rows.pop(0)
 
 for i in range(len(header) - 1):
